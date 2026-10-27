@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Indra Kumar Dasaratharam – Creative Director</title>
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F4FF;--bg2:#ECEAFF;--ink:#13132B;--mut:#5A5A7C;--acc:#5B5FEF;--acc2:#3B3FD0;--line:rgba(19,19,43,.14);--panel:#FFFFFF;--on-acc:#FFFFFF;
+--hd:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;--bd:'DM Sans','Segoe UI',system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C0C1F;--bg2:#15152F;--ink:#F1F0FF;--mut:#A3A4C4;--acc:#8E91FF;--acc2:#B3B5FF;--line:rgba(241,240,255,.16);--panel:#17173A;--on-acc:#0C0C1F}}
+:root[data-theme="dark"]{--bg:#0C0C1F;--bg2:#15152F;--ink:#F1F0FF;--mut:#A3A4C4;--acc:#8E91FF;--acc2:#B3B5FF;--line:rgba(241,240,255,.16);--panel:#17173A;--on-acc:#0C0C1F}
+html{scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--bd);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+h1,h2,h3{font-family:var(--hd);margin:0;letter-spacing:-.02em;line-height:1.05}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:28px;height:68px}
+.mark{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--acc);color:var(--on-acc);font:800 15px var(--hd);text-decoration:none}
+.nav nav{display:flex;gap:26px;margin-left:auto;font-size:15px}
+.nav nav a{text-decoration:none;color:var(--mut);padding:6px 0}
+.nav nav a:hover{color:var(--ink)}
+.tg{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:20px;padding:7px 14px;font:500 14px var(--bd);cursor:pointer}
+.tg:hover{border-color:var(--acc)}
+@media(max-width:640px){.nav nav a:not(.keep){display:none}.nav{gap:14px}}
+/* hero */
+.hero{padding:clamp(56px,10vw,120px) 0 40px;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(44px,8.6vw,118px);font-weight:800;max-width:11ch;letter-spacing:-.04em;line-height:.96}
+.hero .who{margin:28px 0 0;font:600 clamp(18px,2.2vw,24px)/1.3 var(--hd)}
+.hero .lede{max-width:56ch;color:var(--mut);font-size:clamp(17px,1.6vw,20px);margin:12px 0 0}
+.sc{display:block;width:100%;height:auto;margin:clamp(28px,5vw,56px) 0 8px;overflow:visible}
+.sc .tangle{fill:none;stroke:var(--acc);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2600;stroke-dashoffset:2600;animation:draw 2.6s cubic-bezier(.6,.1,.2,1) .3s forwards}
+.sc .clean{fill:none;stroke:var(--ink);stroke-width:5;stroke-linecap:round;stroke-dasharray:420;stroke-dashoffset:420;animation:draw 1.1s ease-out 2.6s forwards}
+.sc .dot{fill:var(--acc);opacity:0;animation:pop .4s ease-out 3.6s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}@keyframes pop{to{opacity:1}}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);margin-top:24px}
+.facts div{padding:20px 20px 0 0}
+.facts b{display:block;font:800 clamp(24px,3vw,34px) var(--hd);letter-spacing:-.02em}
+.facts span{color:var(--mut);font-size:15px}
+@media(max-width:720px){.facts{grid-template-columns:1fr 1fr}}
+/* sections */
+section{padding:clamp(64px,9vw,120px) 0}
+.sh{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:32px;align-items:end;margin-bottom:clamp(32px,5vw,56px)}
+.sh h2{font-size:clamp(32px,5vw,58px);font-weight:800}
+.sh p{margin:0;color:var(--mut);max-width:52ch}
+@media(max-width:820px){.sh{grid-template-columns:1fr;align-items:start;gap:14px}}
+/* leadership */
+.lead{background:var(--bg2)}
+.lead ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.lead li{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:32px;padding:30px 0;border-bottom:1px solid var(--line)}
+.lead h3{font-size:clamp(24px,3vw,36px);font-weight:600}
+.lead li p{margin:0;color:var(--mut);max-width:58ch}
+@media(max-width:820px){.lead li{grid-template-columns:1fr;gap:8px}}
+.partners{margin-top:40px;color:var(--mut);max-width:70ch}
+.partners b{color:var(--ink);font-weight:500}
+/* work */
+.work{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,56px);align-items:start}
+.list{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.list button{all:unset;box-sizing:border-box;cursor:pointer;padding:22px 16px 22px 0;border-bottom:1px solid var(--line);display:block;transition:padding .25s,color .25s}
+.list button:focus-visible{outline:3px solid var(--acc);outline-offset:-3px}
+.list h3{font-size:clamp(22px,2.4vw,30px);font-weight:600;color:var(--mut);transition:color .25s}
+.list small{display:block;color:var(--mut);font-size:15px;margin-top:4px}
+.list button[aria-selected="true"]{padding-left:18px;box-shadow:inset 4px 0 0 var(--acc)}
+.list button[aria-selected="true"] h3,.list button:hover h3{color:var(--ink)}
+.stage{position:sticky;top:calc(88px + env(safe-area-inset-top,0px));background:var(--panel);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.art{position:relative;aspect-ratio:16/10;overflow:hidden;background:linear-gradient(135deg,var(--g1),var(--g2));transition:background .5s}
+.art i{position:absolute;display:block}
+.art .big{left:6%;bottom:-6%;font:800 clamp(90px,17vw,200px)/1 var(--hd);letter-spacing:-.06em;color:rgba(255,255,255,.18)}
+.art .s1{width:34%;aspect-ratio:1;border-radius:50%;right:9%;top:12%;background:rgba(255,255,255,.2);transition:all .6s}
+.art .s2{width:30%;height:44%;border-radius:18px;right:26%;bottom:10%;background:rgba(255,255,255,.92);box-shadow:0 20px 50px rgba(0,0,0,.25);transition:all .6s}
+.art .s3{width:22%;height:6px;border-radius:3px;right:30%;bottom:38%;background:var(--g2);transition:all .6s}
+.art[data-v="1"] .s1{border-radius:22px;transform:rotate(14deg)}
+.art[data-v="2"] .s1{width:48%;right:-6%;top:-14%}
+.art[data-v="2"] .s2{border-radius:50%;width:26%;height:auto;aspect-ratio:1}
+.art[data-v="3"] .s2{width:42%;height:30%;right:14%;border-radius:40px 40px 6px 40px}
+.art[data-v="4"] .s2{width:20%;height:62%;border-radius:30px;right:34%}
+.art[data-v="5"] .s1{border-radius:0;width:60%;height:14px;aspect-ratio:auto;top:30%;right:0}
+.info{padding:clamp(20px,3vw,32px)}
+.info h3{font-size:clamp(24px,3vw,34px);font-weight:600}
+.info .tag{display:inline-block;margin-bottom:12px;border:1px solid var(--acc);color:var(--acc2);border-radius:20px;padding:3px 12px;font-size:14px}
+.info p{margin:12px 0 0;color:var(--mut);max-width:58ch}
+.info .role{margin-top:16px;padding-top:16px;border-top:1px solid var(--line);font-size:15px;color:var(--mut)}
+.info .role b{color:var(--ink);font-weight:500}
+@media(max-width:860px){.work{grid-template-columns:1fr}.stage{position:static;order:-1}}
+/* career */
+.career{background:var(--bg2)}
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(32px,6vw,80px)}
+@media(max-width:820px){.cols{grid-template-columns:1fr}}
+.cols h3{font-size:clamp(24px,3vw,32px);font-weight:600;margin-bottom:18px}
+.row{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:20px 0;border-top:1px solid var(--line)}
+.row time{color:var(--mut);font-size:15px}
+.row b{font:600 20px/1.25 var(--hd);display:block}
+.row span{color:var(--mut);font-size:15px}
+.row em{display:block;font-style:normal;color:var(--acc2);font-size:15px;margin-top:2px}
+/* toolkit + clients */
+.tk{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 24px}
+@media(max-width:900px){.tk{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.tk h3{font-size:20px;font-weight:600;margin-bottom:8px}
+.tk p{margin:0;color:var(--mut);font-size:15.5px}
+.clients{display:flex;flex-wrap:wrap;gap:14px 38px;margin-top:56px;padding-top:36px;border-top:1px solid var(--line);align-items:baseline}
+.clients p{flex-basis:100%;margin:0 0 4px;color:var(--mut)}
+.clients span{font:800 clamp(22px,3vw,34px) var(--hd);letter-spacing:-.03em;color:var(--mut);opacity:.85}
+/* contact */
+.cta{background:var(--acc);color:var(--on-acc)}
+.cta h2{font-size:clamp(38px,7vw,92px);font-weight:800;max-width:14ch;letter-spacing:-.04em;line-height:.98}
+.cta p{max-width:52ch;margin:20px 0 0;opacity:.9}
+.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.btn{display:inline-block;text-decoration:none;font:600 17px var(--hd);padding:15px 28px;border-radius:40px;background:var(--on-acc);color:var(--acc2)}
+:root:not([data-theme="dark"]) .btn{color:#3B3FD0}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn{color:var(--bg)}}
+:root[data-theme="dark"] .btn{color:var(--bg)}
+.btn.o{background:transparent;color:inherit!important;border:2px solid currentColor}
+.cta :focus-visible{outline-color:var(--on-acc)}
+footer{padding:28px 0;color:var(--mut);font-size:14.5px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-delay:0s!important;transition:none!important;scroll-behavior:auto!important}}
+
+.whorow{display:flex;align-items:center;gap:18px;margin-top:28px}.whorow .who{margin:0}
+.av{width:76px;height:76px;border-radius:50%;object-fit:cover;border:3px solid var(--acc);flex:none}
+details.pl{border-bottom:1px solid var(--line)}
+.pillars{border-top:1px solid var(--line)}
+details.pl summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:32px;padding:28px 44px 28px 0;position:relative}
+details.pl summary::-webkit-details-marker{display:none}
+details.pl summary::after{content:"+";position:absolute;right:4px;top:22px;font:600 32px var(--hd);color:var(--acc2);transition:transform .25s}
+details.pl[open] summary::after{transform:rotate(45deg)}
+details.pl summary h3{font-size:clamp(24px,3vw,36px);font-weight:600}
+details.pl summary p,details.pl summary small{margin:0;color:var(--mut);max-width:58ch;font-size:17px}
+.lead ul.pts,ul.pts{list-style:disc;margin:0 0 30px;padding:0 0 0 calc((100% - 32px)*5/12 + 32px + 20px);border:0;color:var(--mut);max-width:none}
+ul.pts li{display:list-item;padding:5px 0;border:0;max-width:62ch}
+@media(max-width:820px){details.pl summary{grid-template-columns:1fr;gap:6px}ul.pts,.lead ul.pts{padding-left:22px}}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;counter-reset:s}
+.steps li{counter-increment:s;border-top:3px solid var(--acc);padding-top:16px}
+.steps li::before{content:counter(s);display:block;font:800 40px var(--hd);color:var(--acc2);line-height:1;margin-bottom:10px}
+.steps h3{font-size:22px;font-weight:600;margin-bottom:6px}.steps p{margin:0;color:var(--mut);font-size:15.5px}
+@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+.note{color:var(--mut);max-width:66ch;margin:32px 0 0;font-size:15.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chips span{border:1px solid var(--line);border-radius:20px;padding:5px 14px;font-size:15px;color:var(--mut)}
+.lk{display:inline-block;margin-top:26px;font:600 17px var(--hd);color:var(--acc2);border-bottom:2px solid var(--acc);text-decoration:none;padding-bottom:3px}
+.edu{margin-top:clamp(40px,6vw,72px)}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="mark" href="#top" aria-label="Indra Kumar Dasaratharam, back to top">IK</a>
+<nav aria-label="Primary"><a href="#leadership">Leadership</a><a href="#approach">Approach</a><a href="#work">Work</a><a href="#career">Career</a><a class="keep" href="#contact">Contact</a></nav>
+<button class="tg" id="tg" type="button" aria-label="Switch colour theme">Theme</button>
+</div></header>
+<main id="top">
+<div class="hero"><div class="wrap">
+<h1>Creative direction that turns complexity into conviction.</h1>
+<div class="whorow"><img class="av" src="mypic.jpg" alt="Portrait of Indra Kumar Dasaratharam" width="76" height="76"><p class="who">Indra Kumar Dasaratharam<br><span style="font-weight:400;color:var(--mut);font-size:.8em">Creative Director | Creative &amp; Design Leader | Executive Manager</span></p></div>
+<p class="lede">15+ years leading creative and UX teams across visual design, brand communication, enterprise digital experiences and executive presentations. I combine creative strategy, business understanding and design thinking to make complex ideas clear, persuasive and scalable, and I’m now focused on AI-enabled creative transformation.</p>
+<svg class="sc" viewBox="0 0 1100 150" role="img" aria-label="A tangled line resolving into one clean line, representing complexity made clear">
+<path class="tangle" d="M10 80 C60 10 110 150 160 70 S230 10 250 90 S120 140 200 100 S330 20 350 80 S250 150 330 110 S460 10 480 78 S390 150 450 96 S560 30 590 76 S520 120 560 92 S650 70 700 75"/>
+<path class="clean" d="M700 75 L1070 75"/><circle class="dot" cx="1075" cy="75" r="10"/></svg>
+<div class="facts">
+<div><b>15+</b><span>years in creative and design leadership</span></div>
+<div><b>3</b><span>global technology firms: NTT DATA, Cognizant, HCL</span></div>
+<div><b>5</b><span>regions: US, UK, Europe, Middle East, APAC</span></div>
+<div><b>4</b><span>sectors: healthcare, banking, telecom, retail</span></div>
+</div></div></div>
+<section class="lead" id="leadership"><div class="wrap">
+<div class="sh"><h2>Leadership, in four disciplines</h2><p>What I do as a creative leader, with the detail behind it. Open any row to see how it shows up in my work.</p></div>
+<div class="pillars"><details class="pl" open><summary><h3>Lead and grow creative teams</h3><p>Inspiring a multidisciplinary team of designers, UX specialists and creatives toward one standard of excellence.</p></summary><ul class="pts"><li>Lead UX/UI, visual design and creative professionals across global digital programmes, providing creative direction, design oversight and quality leadership.</li><li>Mentor and coach through structured feedback, design reviews, performance discussions and career-development planning.</li><li>Align creative direction with stakeholders across the US, UK, Europe, Middle East and APAC, adapting to different business and cultural contexts.</li><li>Build a quality culture where individual capability grows alongside the work.</li></ul></details><details class="pl"><summary><h3>Set the creative vision and make it persuasive</h3><p>Turning complex technology and business requirements into stories senior buyers and executives act on.</p></summary><ul class="pts"><li>Translate requirements into clear visual systems, executive-ready presentations and scalable experience solutions.</li><li>Facilitate design-thinking workshops and stakeholder reviews with business leaders and executive sponsors to frame problems and align decisions.</li><li>Articulate design rationale, resolve competing priorities and guide decisions on complex design challenges.</li><li>Partner with marketing, branding and communication teams so every experience reflects brand expectations.</li></ul></details><details class="pl"><summary><h3>Innovate with AI and automation</h3><p>Using emerging tools to raise creative velocity without lowering the bar.</p></summary><ul class="pts"><li>Exploring AI-assisted workflows for concept development, rapid visualisation and ideation.</li><li>Designing conversational and agentic AI experiences, such as the TVS service co-pilot journey.</li><li>Hands-on with ChatGPT, Midjourney, Runway and DALL·E, alongside automation-oriented production practices.</li><li>Currently deepening this through the IIT Delhi certificate in AI-led innovation for leadership.</li></ul></details><details class="pl"><summary><h3>Run creative operations with discipline</h3><p>Predictable delivery, clear standards and quality that holds under tight deadlines.</p></summary><ul class="pts"><li>Support resource allocation, workload balancing, sprint planning and delivery forecasting.</li><li>Established design-governance practices that improved consistency across products and platforms and set clearer quality expectations.</li><li>Managed creative production workflows with quality assurance and brand compliance, from corporate video to digital campaigns.</li><li>Agile product development and cross-functional execution with development, marketing and leadership teams.</li></ul></details></div>
+<div class="chips" aria-label="Core capabilities"><span>Creative direction</span><span>Visual storytelling</span><span>Design strategy</span><span>Brand communication</span><span>Executive presentations</span><span>Stakeholder management</span><span>Design thinking</span><span>Workshop facilitation</span><span>Design governance</span><span>Quality management</span><span>Enterprise UX</span><span>Design systems</span><span>Video and motion</span><span>Digital asset production</span></div>
+</div></section>
+<section id="approach"><div class="wrap">
+<div class="sh"><h2>How I approach pursuit and proposal storytelling</h2><p>Persuasive deliverables follow the same discipline as my enterprise programmes: frame the problem, shape the story, produce with craft, then review hard.</p></div>
+<ol class="steps">
+<li><h3>Frame the buyer’s problem</h3><p>Run workshops and stakeholder sessions with business leaders to define what the audience must believe and decide.</p></li>
+<li><h3>Shape the story</h3><p>Turn complex requirements into a clear narrative, with the design rationale to defend every choice.</p></li>
+<li><h3>Design and produce</h3><p>Deliver presentations, visual systems, video, motion and digital assets, accelerated with AI-assisted tools.</p></li>
+<li><h3>Review for quality</h3><p>Hold design-quality reviews for accuracy, brand compliance and consistency before anything ships.</p></li>
+</ol>
+<p class="note">Proposal and pursuit storytelling is a transferable strength, built through executive presentations, workshops and stakeholder reviews on enterprise programmes.</p>
+</div></section>
+<section class="career" id="work"><div class="wrap">
+<div class="sh"><h2>Selected work</h2><p>Six programmes across brand, communications, presentation and motion, AI experience, UX and web. Select one to see the brief and what I owned.</p></div>
+<div class="work">
+<div class="list" role="tablist" aria-label="Selected projects" id="list"></div>
+<article class="stage" id="stage" role="tabpanel" aria-live="polite">
+<div class="art" id="art"><i class="s1"></i><i class="s2"></i><i class="s3"></i><i class="big" id="big"></i></div>
+<div class="info"><span class="tag" id="tag"></span><h3 id="ttl"></h3><p id="dsc"></p><p class="role" id="rol"></p></div>
+</article></div>
+<a class="lk" href="https://www.figma.com/proto/uvA1PeCoyn5IcP0YEiW6Lf/IndraKumar-GraphicDesignPortfolio2026?node-id=32-4005&amp;t=fnz1tW1FPkJn5BXV-1&amp;scaling=scale-down-width&amp;content-scaling=fixed&amp;page-id=32%3A3940&amp;starting-point-node-id=32%3A7186" target="_blank" rel="noopener">Open the full Figma portfolio</a>
+</div></section>
+<section id="career"><div class="wrap">
+<div class="sh"><h2>Career and learning</h2><p>From hands-on design execution to directing creative and UX teams for global enterprises, now guiding innovation and quality at NTT DATA.</p></div>
+<div class="pillars"><details class="pl" open><summary><h3>NTT DATA Pvt. Ltd.</h3><p>Software Development Senior Specialist, functioning as Innovation Manager. Oct 2025 to present</p></summary><ul class="pts"><li>Lead multidisciplinary UX/UI, visual design and creative professionals across global digital programmes.</li><li>Set creative standards and lead design-quality reviews that strengthen consistency, governance and execution quality.</li><li>Partner with stakeholders across the US, UK, Europe and APAC to balance creative direction with business priorities and delivery realities.</li><li>Lead stakeholder reviews, mentor designers and support resource allocation, sprint planning and delivery forecasting.</li><li>Explore AI-enabled concept development, visualisation and automation to improve creative velocity.</li></ul></details><details class="pl"><summary><h3>Cognizant Technology Solutions</h3><p>Design Lead. Mar 2013 to Oct 2025</p></summary><ul class="pts"><li>Directed creative and UX teams delivering customer-centric digital solutions across healthcare, banking, telecom and retail.</li><li>Collaborated with delivery centres and client teams across North America, Europe, Middle East and APAC.</li><li>Established design-governance practices that improved consistency and clarified quality expectations.</li><li>Facilitated design-thinking workshops and executive reviews that moved ideas toward execution.</li></ul></details><details class="pl"><summary><h3>HCL Technologies</h3><p>Design Executive. Dec 2010 to Feb 2013</p></summary><ul class="pts"><li>Produced corporate marketing videos, branding collateral, digital campaigns, brochures, landing pages, product visuals and infographics.</li><li>Collaborated with marketing, development and leadership teams on consistent brand experiences across digital and print.</li><li>Managed creative production workflows with quality assurance and brand compliance.</li></ul></details></div>
+<div class="cols edu"><div><h3>Education</h3>
+<div class="row"><time>In progress</time><div><b>M.Sc. Design Thinking, Innovation and Strategy</b><span>O.P. Jindal Global University</span></div></div>
+<div class="row"><time>2026</time><div><b>Advanced Certificate, AI-Led Innovation for Leadership</b><span>IIT Delhi</span></div></div>
+<div class="row"><time>2009</time><div><b>MBA, Human Resource</b><span>University of Madras, Chennai</span></div></div>
+<div class="row"><time>2007</time><div><b>Bachelor of Commerce</b><span>C. Kandasawmy Naidu College, Chennai</span></div></div></div>
+<div><h3>Toolkit</h3>
+<div class="row"><time>Adobe CC</time><div><span>Photoshop, Illustrator, InDesign, Premiere Pro, After Effects</span></div></div>
+<div class="row"><time>Design</time><div><span>Figma, Adobe XD</span></div></div>
+<div class="row"><time>AI and emerging</time><div><span>ChatGPT, Midjourney, Runway, DALL·E</span></div></div>
+<div class="row"><time>Methods</time><div><span>Design thinking, Agile, design governance, executive workshops, cross-functional leadership</span></div></div></div></div>
+<div class="clients"><p>Notable clients and collaborations</p><span>CVS Health</span><span>TriZetto</span><span>Verizon</span><span>U.S. Bank</span><span>Toyota</span><span>Centene</span><span>AstraZeneca</span><span>Abbott</span></div>
+</div></section>
+<section class="cta" id="contact"><div class="wrap">
+<h2>Let’s lead the next big idea together.</h2>
+<p>Open to conversations about creative direction and design leadership for teams that need to win with great storytelling. Based in Chennai, India.</p>
+<div class="btns"><a class="btn" href="mailto:dindirakumar@gmail.com">Email Indra</a><a class="btn o" href="tel:+919962440015">Call +91 99624 40015</a><a class="btn o" href="https://www.linkedin.com/in/indrakumar-d" target="_blank" rel="noopener">LinkedIn</a></div>
+</div></section>
+</main>
+<footer><div class="wrap"><span>Chennai, India</span><span>dindirakumar@gmail.com</span><a href="#top">Back to top</a></div></footer>
+<script>
+var P=[
+{n:"Marketing collateral",t:"Brand and print",c:["#3B3FD0","#8E5BEF"],v:0,d:"Mailers, brochures and business presentations that carry brand messaging and lift customer engagement, laid out to brand guidelines so digital and print assets read as one system.",r:"Visual layouts and brand consistency across digital and print"},
+{n:"Corporate communication",t:"Communications",c:["#1E2A78","#5B5FEF"],v:1,d:"Newsletters, brochures, mailers and presentations that communicate brand messaging clearly while keeping the visual language consistent across every touchpoint.",r:"Communication design and visual consistency"},
+{n:"NTT DATA company overview",t:"Presentation and motion",c:["#0A1A4F","#2F7BFF"],v:2,d:"The company overview intro presentation, created to help clients and society move confidently into the digital future.",r:"Executive presentation, motion and visual storytelling"},
+{n:"TVS service co-pilot demo",t:"AI experience",c:["#2B1B6B","#C23B6B"],v:3,d:"A demo of an end-to-end, AI-driven customer journey orchestration system that works across the entire customer service journey.",r:"Experience design for a conversational, agentic service journey"},
+{n:"Crops Friend",t:"UX case study",c:["#0F6B4F","#7BC96F"],v:4,d:"A mobile application concept that gives farmers up-to-date information across the agriculture industry.",r:"UX research and interface design"},
+{n:"N2S Global website",t:"Web design",c:["#13132B","#5B5FEF"],v:5,d:"The existing site lacked modern, user-centric design and struggled to explain complex global workforce solutions. The redesign makes them clear and approachable.",r:"Website redesign, user-centric design and content clarity"}];
+var L=document.getElementById("list"),A=document.getElementById("art");
+function show(i){var p=P[i];
+[].forEach.call(L.children,function(b,j){b.setAttribute("aria-selected",j===i);b.tabIndex=j===i?0:-1});
+A.style.setProperty("--g1",p.c[0]);A.style.setProperty("--g2",p.c[1]);A.setAttribute("data-v",p.v);
+document.getElementById("big").textContent=p.n.split(" ").map(function(w){return w[0]}).join("").slice(0,3);
+document.getElementById("tag").textContent=p.t;document.getElementById("ttl").textContent=p.n;
+document.getElementById("dsc").textContent=p.d;
+document.getElementById("rol").innerHTML="<b>What I owned:</b> "+p.r}
+P.forEach(function(p,i){var b=document.createElement("button");b.type="button";b.setAttribute("role","tab");
+b.innerHTML="<h3>"+p.n+"</h3><small>"+p.t+"</small>";
+b.onclick=b.onmouseenter=function(){show(i)};
+b.onkeydown=function(e){var k=e.key,n=k==="ArrowDown"?i+1:k==="ArrowUp"?i-1:null;
+if(n!==null){e.preventDefault();n=(n+P.length)%P.length;show(n);L.children[n].focus()}};
+L.appendChild(b)});
+show(0);
+var r=document.documentElement,tg=document.getElementById("tg");
+try{var s=localStorage.getItem("ik-theme");if(s)r.setAttribute("data-theme",s)}catch(e){}
+tg.onclick=function(){var d=r.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");
+var n=d==="dark"?"light":"dark";r.setAttribute("data-theme",n);try{localStorage.setItem("ik-theme",n)}catch(e){}}
+</script>
+</body>
+</html>
